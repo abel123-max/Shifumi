@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHIFUMI</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- As a link -->
+    <nav class="navbar navbar-light bg-secondary">
+        <a class=" navbar-brand" href="#">SHIFUMI</a>
+    </nav>
+
+    </div>
+    <div class="row">
+        <div class="col-5">
+            <div class="alert alert-secondary" role="alert">
+                <h1 onclick="change()" id="demo">choisi ton nom</h1>
+
+
+            </div>
+           <div class="score_1">
+            <div  class="rond_joueur1" id="led1">
+
+            </div>
+            <div id="" class="rond_joueur2" id="led2">
+                
+            </div>
+            <div class="rond_joueur3" id="led3">
+                
+            </div>
+        </div>
+        </div>
+        <div class="col-2">
+
+        </div>
+        <div class="col-5">
+            <div class="alert alert-secondary" role="alert">
+                IAMon
+
+            </div>
+
+        <div class="score_2">
+            <div class="ronde_joueur1" id="ledo1">
+
+            </div>
+            <div class="ronde_joueur2" id="ledo2">
+                
+            </div>
+            <div class="ronde_joueur3" id="ledo3">
+                
+            </div>
+        
+        </div>
+    </div>
+
+    </div>
+    <div class="row">
+        <div class="col-2"></div>
+
+        <div class="col-3">
+            <img id="mdimg" src="images/shifumi_ciseaux.png" alt="" srcset="">
+        </div>
+        <div class="col-4">
+            <button type="button" class="btn btn-primary">
+                round <span id="nombre" class="badge badge-light">0</span>
+              </button>
+        </div>
+
+        <div class="col-3">
+            <img id="mdimg2" src="images/shifumi_feuille.png" alt="" srcset="">
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-5">
+
+        </div>
+        <div class="col-2">
+            <img onclick="changement_de_jeux1('ciseaux')" src="images/shifumi_ciseaux.png" width="50px">
+            <img onclick="changement_de_jeux1('pierre')" src="images/shifumi_pierre.png" width="50px">
+            <img onclick="changement_de_jeux1('feuille')" src="images/shifumi_feuille.png" width="50px">
+
+
+        </div>
+        <div class="col-5">
+
+        </div>
+    </div>
+    <div id="score" class="score">
+        
+    </div>
+</body>
+
+</html>
